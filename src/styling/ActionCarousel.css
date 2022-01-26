@@ -1,0 +1,66 @@
+.slick-dots{
+    position: static !important;
+    margin:24px 0;
+}
+
+.slick-arrow {
+    display: none !important;
+}
+
+.slick-dots li button:before{
+    font-size: 20px !important;
+    bottom: -44px !important;
+}
+
+.slick-dots li.slick-active button:before{
+    opacity: 1 !important;
+    color: #FF2E63;
+}
+
+.slick-dots li button:before {
+    color: #FF2E63 !important;
+}
+
+/* Action Block Structure Styling */
+
+.carousel-header {
+    padding-left: 20px;
+}
+
+div.building-block {
+    padding: 6px;
+
+}
+
+.action-block {
+    min-width: 30%;
+    display: block;
+    background: rgba(255,46,99,.1);
+    margin: 6px;
+    padding: 30px 20px;
+    border-radius: 6px;
+    color: #FF2E63;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .action-block:hover {
+      color: #fff;
+    background: rgba(255,46,99,1);
+  }
+
+  .action-block:hover h4 {
+      color: #fff;
+  }
+
+  .action-block h4 {
+      font-size: 16px;
+      margin:10px;
+  }
+
+  @media only screen and (max-width: 580px) {
+      .action-block{
+          padding: 30px 10px;
+          margin:0;
+      }
+  }

@@ -1,0 +1,191 @@
+
+.slick-arrow {
+    display: none !important;
+}
+
+.slick-dots {
+  position: static !important;
+  margin:24px 0;
+}
+
+.slick-dots li button:before{
+    font-size: 20px !important;
+}
+
+.slick-dots li.slick-active button:before{
+    opacity: 1 !important;
+    color: #FF2E63;
+}
+
+.slick-dots li button:before {
+    color: #FF2E63 !important;
+}
+
+.carousel-header {
+  padding-left: 20px;
+  text-align: left;
+}
+
+/* Wallet Structure Styling */
+
+div.building-block {
+    padding: 10px;
+}
+
+.wallet {
+    min-width: 46%;
+    display: block;
+    background: pink;
+    margin: 6px;
+    padding: 36px 40px 48px 40px;
+    border-radius: 6px;
+    color: #fff;
+    text-align: left;
+    transition: all 0.3s ease;
+  }
+
+  .wallet:hover {
+    box-shadow: 0 0 20px rgba(55, 58, 77, 0.1);
+  }
+  
+  .view-wallet:hover {
+    opacity: 1;
+  }
+  
+  .view-wallet {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  
+  .view-wallet span {
+    margin-left: 6px;
+  }
+  
+  .add-new-wallet {
+    box-shadow: none !important;
+    border: 2px dashed #e2e4f0;
+    background: #fff;
+    padding: 64px 0;
+    margin-top: 2px;
+    border-radius: 6px;
+    text-align: center;
+  }
+  
+  .add-new-wallet a {
+    background: transparent;
+    outline: none;
+    border: none;
+  }
+  
+  .add-new-wallet a span {
+    color: #ff2e63;
+  }
+  
+  .wallet .currency-amount {
+    font-size: 36px;
+    font-weight: bold;
+    padding-bottom: 14px;
+  }
+  
+  .view-wallet,
+  .currency p {
+    color: #fff;
+  }
+
+  .currency p{
+      display: flex;
+      align-items: center;
+  }
+
+  .currency img {
+      width: 36px;
+      border-radius: 4px;
+      margin-right: 10px;
+      padding: 4px;
+      background: #fff;
+  }
+
+
+
+  .wallet.gradient-one {
+    background: #ee0979; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #ff6a00,
+      #ee0979
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #ff6a00,
+      #ee0979
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  .wallet.gradient-two {
+    background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #2c5364,
+      #203a43,
+      #0f2027
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #2c5364,
+      #203a43,
+      #0f2027
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  .wallet.gradient-three {
+    background: #ad5389; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #3c1053,
+      #ad5389
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #3c1053,
+      #ad5389
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  .wallet.gradient-four {
+    background: #000046; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #1cb5e0,
+      #000046
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #1cb5e0,
+      #000046
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  .wallet.gradient-five {
+    background: #73c8a9; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #373b44,
+      #73c8a9
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #373b44,
+      #73c8a9
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+/* Hand Device Responsive Styling */
+
+@media only screen and (max-width: 600px) {
+  .wallets{display: block;}
+  .wallet{min-width: 80%;margin-top: 20px;}
+  .add-new-wallet{margin-top: 22px;}
+}
