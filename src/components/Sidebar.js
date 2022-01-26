@@ -7,6 +7,7 @@ import {
   Link,
   NavLink
 } from "react-router-dom";
+import React, { useState } from 'react'
 // Menu Icons
 import HomeIcon from "@mui/icons-material/Home";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
@@ -24,11 +25,13 @@ import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 
 
 export default function Sidebar() {
+  const [mobileIsOpened, setMobileIsOpened] = useState(false);
+  const mobileClose = () => setMobileIsOpened(true);
   return (
     <div className="sidebar">
       <ul>
         <li>
-          <NavLink activeClassName="active" exact to="/">
+          <NavLink onClick={mobileClose} activeClassName="active" exact to="/">
             <span className="nav-icon">
               <HomeIcon sx={{fontSize:20}}/>
             </span>

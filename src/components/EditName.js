@@ -3,6 +3,7 @@ import { styled, Box } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
 import BasicTextField from "./BasicTextField";
 import BadgeIcon from '@mui/icons-material/Badge';
+import CloseIcon from '@mui/icons-material/Close';
 import "../styling/styles.css";
 
 const StyledModal = styled(ModalUnstyled)`
@@ -56,6 +57,9 @@ export default function EditName(props) {
       >
         <Box sx={style}>
           <div className="confirm-otp">
+          <div className="hideModal">
+            <button onClick={handleClose}><CloseIcon sx={{fontSize:"26px"}}/></button>
+          </div>
             <div className="otp-icon">
               <BadgeIcon sx={{ fontSize: 60 }} />
             </div>

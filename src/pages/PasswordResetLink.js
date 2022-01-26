@@ -4,7 +4,7 @@ import GoogleIcon from "@mui/icons-material/Google";
 import AppleIcon from "@mui/icons-material/Apple";
 import BasicTextField from "../components/BasicTextField";
 import PasswordInput from "../components/PasswordInput";
-import logo from '../../src/logo.png';
+import logo from '../../src/logo.svg';
 import background from '../../src/background-image.jpg';
 import style from '../styling/styles.module.css'
 import '../styling/styles.css'

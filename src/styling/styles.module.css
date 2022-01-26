@@ -217,6 +217,7 @@ button.notificationButton {
   }
   
   .headerBlock {
+      padding-left: 30px;
       display: flex;
       align-items: center;
       width: 100%;
@@ -669,9 +670,11 @@ button.hideProfileHint:hover {
   .profileToolTip{display: block;}
   .profileToolTip .virtualCard{width: 100%;margin:30px 0;}
   .profileToolTip .becomeMerchant{width: 100%;}
-  #mobileHeader{display: flex;}
+  #mobileHeader{display: flex;position: fixed;width: 100%;z-index: 30;}
   #mobileSidebar{display: block;}
   #desktopHeader, #desktopSidebar{display: none;}
+  .mainWrap{padding: 90px 10px 20px 10px;width: auto;overflow: hidden;}
+  .wrapContainerBorder{margin: 20px auto;}
   
 }
 
@@ -679,16 +682,13 @@ button.hideProfileHint:hover {
   p{
     font-size: 16px;
   }
+  h4{font-size: 16px;}
   .confirmDetails p{
     font-size: 18px;
   }
+  .headerBlock{padding-left: 20px;}
   .headerLogo img{
-    width: 130px;
-  }
-  .mainWrap{
-    padding: 20px 10px;
-    width: auto;
-    overflow: hidden;
+    width: 100%;
   }
   .wrapContainerBorder{
     width: 96%;
@@ -697,4 +697,8 @@ button.hideProfileHint:hover {
   .buttonPrimary{
     padding: 20px 30px;
   }
+  .profileSetting>h3{
+    padding: 10px 20px;
+  }
+
 }

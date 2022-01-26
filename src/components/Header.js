@@ -1,4 +1,4 @@
-import logo from '../../src/logo.png';
+import logo from '../../src/logo.svg';
 import style from '../styling/styles.module.css'
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import {

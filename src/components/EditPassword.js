@@ -2,6 +2,7 @@ import React from "react";
 import { styled, Box } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
 import PasswordInput from "./PasswordInput";
+import CloseIcon from '@mui/icons-material/Close';
 import LockIcon from '@mui/icons-material/Lock';
 import "../styling/styles.css";
 
@@ -56,6 +57,9 @@ export default function EditPassword(props) {
       >
         <Box sx={style}>
           <div className="confirm-otp">
+          <div className="hideModal">
+            <button onClick={handleClose}><CloseIcon sx={{fontSize:"26px"}}/></button>
+          </div>
             <div className="otp-icon">
               <LockIcon sx={{ fontSize: 60 }} />
             </div>

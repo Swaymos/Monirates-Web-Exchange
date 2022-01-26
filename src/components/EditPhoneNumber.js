@@ -2,6 +2,7 @@ import React from "react";
 import { styled, Box } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
 import BasicTextField from "./BasicTextField";
+import CloseIcon from '@mui/icons-material/Close';
 import BadgeIcon from '@mui/icons-material/Badge';
 import "../styling/styles.css";
 
@@ -58,6 +59,9 @@ export default function EditPhoneNumber(props) {
       >
         <Box sx={style}>
           <div className="confirm-otp">
+          <div className="hideModal">
+            <button onClick={handleClose}><CloseIcon sx={{fontSize:"26px"}}/></button>
+          </div>
             <div className="otp-icon">
               <BadgeIcon sx={{ fontSize: 60 }} />
             </div>
